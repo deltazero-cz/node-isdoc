@@ -17,7 +17,7 @@ For parsing ISDOC from or attaching it to a PDF, see
 ### Installation
 
 ```shell
-npm i isdoc
+npm i @deltazero/isdoc
 ```
 
 ### Usage

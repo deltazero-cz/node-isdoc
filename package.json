@@ -1,5 +1,5 @@
 {
-  "name": "isdoc",
+  "name": "@deltazero/isdoc",
   "version": "0.1.0",
   "description": "Create ISDOC - Czechia's standard invoice format for data exchange",
   "author": "ΔO - David Obdržálek <david@deltazero.cz>",
