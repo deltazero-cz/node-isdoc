@@ -25,7 +25,6 @@
   },
   "devDependencies": {
     "@types/chai": "^4.3.3",
-    "@types/libxmljs": "^0.18.8",
     "@types/mocha": "^9.1.1",
     "@types/node": "^16.0.0",
     "typescript": "latest",
