@@ -51,7 +51,7 @@ export default class Invoice {
   public PaymentMeans ?:                            PaymentMeans
   public SupplementsList ?:                         any
   private $_xmlns = 'http://isdoc.cz/namespace/2013'
-  private $_version = '6.0.2'
+  private $_version = '6.0.1'
 
   constructor(data ?: InvoiceType|string|Buffer) {
     if (typeof data === 'string' || data instanceof Buffer) {
