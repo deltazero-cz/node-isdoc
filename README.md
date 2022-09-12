@@ -4,7 +4,7 @@
 
 This library provides Node.js API for parsing, modifying or creating
 ISDOC invoices. It validates ISDOC invoices agains
-[XSD definition](https://isdoc.github.io/xsd/isdoc-invoice-dsig-6.0.2.xsd). 
+[XSD definition](https://isdoc.github.io/xsd/isdoc-invoice-6.0.2.xsd). 
 It also provides **partial support** for typescript definitions for ISDOC invoices.
 
 Currently supported ISDOC version is 6.0.2.  
@@ -24,7 +24,7 @@ npm i @deltazero/isdoc
 
 Parsing existing invoice files
 ```js
-import Invoice from 'isdoc'
+import Invoice from '@deltazero/isdoc'
 
 const file = await fs.readFile('invoice.isdoc')
 const invoice = new Invoice(file) // Buffer|string
@@ -44,7 +44,7 @@ console.log(invoice.LegalMonetaryTotal.PayableAmount)
 
 Creating new invoices
 ```js
-import Invoice from 'isdoc'
+import Invoice from '@deltazero/isdoc'
 
 const invoice = new Invoice({
   DocumentType: 1,
