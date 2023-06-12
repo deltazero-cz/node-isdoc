@@ -1,6 +1,6 @@
 {
   "name": "@deltazero/isdoc",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Create ISDOC - Czechia's standard invoice format for data exchange",
   "author": "ΔO - David Obdržálek <david@deltazero.cz>",
   "license": "ISC",
@@ -20,8 +20,8 @@
     "node": ">=14.0.0"
   },
   "dependencies": {
-    "fast-xml-parser": "^4.0.9",
-    "xsd-validator": "^1.0.2"
+    "fast-xml-parser": "^4.2.4",
+    "xsd-validator": "^1.1.0"
   },
   "devDependencies": {
     "@types/chai": "^4.3.3",
