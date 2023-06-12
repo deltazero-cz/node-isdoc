@@ -24,7 +24,7 @@ describe('Create an Invoice', () => {
       VATApplicable: true,
       AccountingSupplierParty: {
         Party: {
-          PartyIdentification: { ID: '12345678' },
+          PartyIdentification: { ID: '0123456789' },
           PartyName: { Name: 'Test s.r.o.' },
           PostalAddress: {
             StreetName: 'Dodavatelská',
@@ -133,6 +133,10 @@ describe('Create an Invoice', () => {
 
     expect(invoice).to.have.property('TaxPointDate')
     expect(invoice?.LegalMonetaryTotal?.PayableAmount).to.be.eq(121)
+
+    const inv2 = new Invoice(invoice.toXML(true))
+    expect(typeof inv2.AccountingSupplierParty?.Party.PartyIdentification?.ID).to.be.eq('string')
+    expect(inv2.AccountingSupplierParty?.Party.PartyIdentification?.ID).to.be.eq('0123456789')
   })
 })
 

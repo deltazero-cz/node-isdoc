@@ -5,7 +5,12 @@ import schema from './schema'
 import InvoiceXMLError from './InvoiceXMLError'
 import { randomUUID } from 'crypto'
 
-const xmlopts = { attributeNamePrefix : '$_', ignoreAttributes : false, format: true }
+const xmlopts = {
+  attributeNamePrefix: '$_',
+  ignoreAttributes: false,
+  format: false,
+  numberParseOptions: { hex: false, leadingZeros: false }
+}
 
 export default class Invoice {
   public DocumentType :                             number = 1
